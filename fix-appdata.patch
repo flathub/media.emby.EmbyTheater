@@ -1,0 +1,35 @@
+From 1aed078fd182c45c19185faa675049e2b2f613a6 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Sat, 6 Jun 2026 23:39:24 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+Signed-off-by: Sabri Ünal <yakushabb@gmail.com>
+---
+ share/appdata/media.emby.EmbyTheater.appdata.xml | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+diff --git a/share/appdata/media.emby.EmbyTheater.appdata.xml b/share/appdata/media.emby.EmbyTheater.appdata.xml
+index e6290db..a850cac 100644
+--- a/share/appdata/media.emby.EmbyTheater.appdata.xml
++++ b/share/appdata/media.emby.EmbyTheater.appdata.xml
+@@ -3,12 +3,16 @@
+   <id>media.emby.EmbyTheater</id>
+   <name>Emby Theater</name>
+   <summary>The open media solution</summary>
+-  <developer_name>Emby</developer_name>
++  <developer id="media.emby">
++    <name>Emby</name>
++  </developer>
+   <project_license>GPL-2.0</project_license>
+   <metadata_license>CC0-1.0</metadata_license>
+   <url type="homepage">https://emby.media/</url>
+   <url type="help">https://emby.media/community/</url>
+   <url type="bugtracker">https://github.com/MediaBrowser/emby-theater-electron/issues</url>
++  <url type="vcs-browser">https://github.com/MediaBrowser/emby-theater-electron</url>
++  <launchable type="desktop-id">media.emby.EmbyTheater.desktop</launchable>
+   <description>
+     <p>Emby Theater is an Electron app for Emby</p>
+   </description>
+--
+libgit2 1.7.2
+

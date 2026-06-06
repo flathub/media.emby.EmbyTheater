@@ -32,6 +32,10 @@
           "sha256": "dd323353cb193eda1f6348052e22c07586eae22590d9db8b6e10757df287ea67",
           "strip-components": 0,
           "only-arches": ["x86_64"]
+        },
+        {
+          "type": "patch",
+          "path": "fix-appdata.patch"
         }
       ]
     }
