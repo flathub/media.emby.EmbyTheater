@@ -1,7 +1,7 @@
 {
   "app-id": "media.emby.EmbyTheater",
   "runtime": "org.freedesktop.Platform",
-  "runtime-version": "22.08",
+  "runtime-version": "25.08",
   "sdk": "org.freedesktop.Sdk",
   "command": "media.emby.EmbyTheater",
   "finish-args": [
@@ -21,17 +21,21 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/MediaBrowser/emby-theater-electron/releases/download/3.0.19/emby-theater-flatpak_3.0.19_aarch64.tar.xz",
-          "sha256": "133e402e54915faeb2b171b9e63bf6d12687538f8215eff43abe082b9aeee1b2",
+          "url": "https://github.com/MediaBrowser/emby-theater-electron/releases/download/3.0.21/emby-theater-flatpak_3.0.21_aarch64.tar.xz",
+          "sha256": "e5cf5731a45bf597e39ada7e8930186da4a912750b81dc694eb659e99a6a5e4e",
           "strip-components": 0,
           "only-arches": ["aarch64"]
         },
         {
           "type": "archive",
-          "url": "https://github.com/MediaBrowser/emby-theater-electron/releases/download/3.0.19/emby-theater-flatpak_3.0.19_x86_64.tar.xz",
-          "sha256": "2c5969be51052f91d89f5128da856d127d9338b1cd0e0449a61d1b82a862c6cb",
+          "url": "https://github.com/MediaBrowser/emby-theater-electron/releases/download/3.0.21/emby-theater-flatpak_3.0.21_x86_64.tar.xz",
+          "sha256": "dd323353cb193eda1f6348052e22c07586eae22590d9db8b6e10757df287ea67",
           "strip-components": 0,
           "only-arches": ["x86_64"]
+        },
+        {
+          "type": "patch",
+          "path": "fix-appdata.patch"
         }
       ]
     }
